@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Started From the Bottom</title>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      var el = document.getElementById ("bottom");
+      el.scrollIntoView(true);
+      console.log('hey');
+    }
+  </script>
+
+  <style>
+
+    html, body {
+      position: relative;
+      height: 15000px;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    #here {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    #bottom {
+      position: absolute;
+      bottom: 50px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body id="body">
+
+  <span id="here">now we're here</span>
+
+  <div id="bottom">started from the bottom</div>
+
+</body>
+</html>
